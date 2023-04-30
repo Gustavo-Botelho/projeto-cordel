@@ -1,0 +1,97 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+} /*configura geral!*/
+
+html,body{
+    font-family: var(--font1);
+    min-width: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+header > h1{
+    font-family: var(--font2);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header >p{
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover, footer:hover{
+    text-decoration: underline;
+}
+
+section{
+ font-family: var(--font3);
+ padding-top: 10vh;
+ padding-bottom: 10vh; /*padding com 10% do view height ajusta de acordo com a alteracao do tamanho do navegador*/ 
+ line-height: 2em; /*espaçamento entre linhas*/
+ padding-left: 30px;
+ font-size: 2.5vw;
+ text-align: center;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+section.imagem{ /*toda "section" com a class "imagem"*/
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed; /*fixa a posição da imagem e ela n se mexe*/
+}
+
+section.imagem > p{ /*todo paragrafo dentro de section.imagem vai ter essa configuração*/
+    background-color: rgba(33, 30, 30, 0.582);
+    width: 400px;
+   margin:auto;
+   text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+background-image: url("imagens/background001.jpg");
+background-position: right center;
+background-size: cover;
+}
+
+section#img02{
+    background-image: url("imagens/background002.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
